@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data>
+
+    <Suppliers>
+        <Supplier ID="CFC69F90-EF04-4AC4-8380-8687A21B9B78" Name="Оптима" Edrpo="21642228"/>
+        <Supplier ID="96208AED-C7F6-49F6-89D2-2801022063C6" Name="БАДМ" Edrpo="31816235"/>
+        <Supplier ID="Barcode" Name="Barcode" Edrpo="Barcode"/>
+        <Supplier ID="Tabletki.ua" Name="Tabletki.ua" Edrpo="Tabletki.ua"/>
+        <Supplier ID="Morion" Name="Morion" Edrpo="1234567891"/>
+    </Suppliers>
+
+    <Offers>
+        <Offer Code="238151" Name="Юмекс,тб,№50" Producer="Sanofi" VAT="20" Unit="уп." Partibility="0">
+            <SupplierCodes>
+                <SupplierCode ID="Barcode" Code="1111"/>
+                <SupplierCode ID="Barcode" Code="1111"/>
+                <SupplierCode ID="Barcode" Code="2222"/>
+                <SupplierCode ID="CFC69F90-EF04-4AC4-8380-8687A21B9B78" Code="123213.XX"/>
+                <SupplierCode ID="96208AED-C7F6-49F6-89D2-2801022063C6" Code="456HJ9"/>
+                <SupplierCode ID="Tabletki.ua" Code="A7875EEE-8569-455E-9F33-0FFAF87AA718"/>
+                <SupplierCode ID="Morion" Code="123213"/>
+            </SupplierCodes>
+        </Offer>
+
+        <Offer Code="238153" Name="АСКОРУТИН таблетки №50 (10х5)" Producer="Монофарм" VAT="7" Partibility="1">
+            <SupplierCodes>
+                <SupplierCode ID="Tabletki.ua" Code="4A755C0F-F030-4E69-BDDD-FC9E67191520"/>
+                <SupplierCode ID="Barcode" Code="462264646165"/>
+            </SupplierCodes>
+        </Offer>
+
+        <Offer Code="74584" Name="АЕВІТ капсули м'як. №10" Producer="КВЗ" VAT="7" Partibility="0"/>
+    </Offers>
+
+</Data>

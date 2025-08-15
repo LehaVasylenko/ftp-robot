@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Offers>
+    <Offer>
+        <Code>ЦБ000017483</Code>
+        <Name>Мелоксикам таб. 7.5 мг №20(10х2)</Name>
+        <Producer>Киевский витаминный завод</Producer>
+        <Tax>7</Tax>
+        <Price>63.80</Price>
+        <Quantity>0.500</Quantity>
+        <PriceReserve>52.20</PriceReserve>
+        <Barcode>4820011185659</Barcode>
+        <Code1>108599</Code1>
+        <Code2>101343</Code2>
+        <Code7>203.0248</Code7>
+        <Code8>70044</Code8>
+        <Code9>38759179</Code9>
+    </Offer>
+    <Offer>
+        <Code>ЦБ000017514</Code>
+        <Name>Ромазик таб. 0.02 №30 (10х3)</Name>
+        <Producer>Польфарма</Producer>
+        <Tax>7</Tax>
+        <Price>220.60</Price>
+        <Quantity>1.000</Quantity>
+        <PriceReserve>193.00</PriceReserve>
+        <Barcode>5903060604100</Barcode>
+        <Code1>234799</Code1>
+        <Code2>62883</Code2>
+        <Code7>321.0058</Code7>
+    </Offer>
+    <Offer>
+        <Code>ЦБ000017515</Code>
+        <Name>Глюкометр Ван Тач Селект Симпл</Name>
+        <Producer>Китай</Producer>
+        <Tax>7</Tax>
+        <Price>466.00</Price>
+        <Quantity>1.000</Quantity>
+        <PriceReserve>390.10</PriceReserve>
+        <Barcode>4030841001825</Barcode>
+        <Code1>190996</Code1>
+        <Code7>993.0389</Code7>
+        <Code9>13372653</Code9>
+    </Offer>
+</Offers>
