@@ -15,10 +15,10 @@ import org.slf4j.LoggerFactory;
 public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
-    private static final Path INBOX = Paths.get("src/main/java/edu/my/service/ftp/inbox");
-    private static final Path PROCESSING = Paths.get("src/main/java/edu/my/service/ftp/processing");
-    private static final Path DONE = Paths.get("src/main/java/edu/my/service/ftp/done");
-    private static final Path ERROR = Paths.get("src/main/java/edu/my/service/ftp/error");
+    private static final Path INBOX = Paths.get("/srv/ftp/inbox");
+    private static final Path PROCESSING = Paths.get("/srv/ftp/processing");
+    private static final Path DONE = Paths.get("/srv/ftp/done");
+    private static final Path ERROR = Paths.get("/srv/ftp/error");
 
     public static void main(String[] args) throws Exception {
         log.info("Starting up...");
