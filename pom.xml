@@ -48,6 +48,12 @@
             <version>5.13.4</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
     <build>
@@ -75,7 +81,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>Main</mainClass>
+                                    <mainClass>edu/my/service/Main</mainClass>
                                 </transformer>
                             </transformers>
                             <filters>

@@ -25,7 +25,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>Main</mainClass>
+                  <mainClass>edu/my/service/Main</mainClass>
                 </transformer>
               </transformers>
               <filters>
