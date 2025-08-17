@@ -10,7 +10,7 @@ Group=ftprobot
 WorkingDirectory=/opt/ftp-robot
 
 # Подхватываем переменные окружения
-EnvironmentFile=-/etc/ftp-robot.env
+EnvironmentFile=-/etc/default/ftp-robot.env
 
 # Запуск Java (stdout/stderr в journalctl)
 ExecStart=/usr/bin/java $JAVA_OPTS -jar /opt/ftp-robot/app.jar
@@ -27,7 +27,7 @@ ProtectControlGroups=true
 ProtectKernelModules=true
 ProtectKernelTunables=true
 LockPersonality=true
-MemoryDenyWriteExecute=true
+MemoryDenyWriteExecute=no
 RestrictRealtime=true
 RestrictSUIDSGID=true
 UMask=007
