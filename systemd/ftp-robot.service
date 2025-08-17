@@ -10,7 +10,7 @@ Group=ftprobot
 WorkingDirectory=/opt/ftp-robot
 
 # Подхватываем переменные окружения
-EnvironmentFile=-/etc/default/ftp-robot.env
+EnvironmentFile=-/etc/default/ftp-robot
 
 # Запуск Java (stdout/stderr в journalctl)
 ExecStart=/usr/bin/java $JAVA_OPTS -jar /opt/ftp-robot/app.jar
