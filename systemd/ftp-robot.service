@@ -1,0 +1,46 @@
+[Unit]
+Description=FTP Robot (Java) — picks and processes files from /srv/ftp
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ftprobot
+Group=ftprobot
+WorkingDirectory=/opt/ftp-robot
+
+# Подхватываем переменные окружения
+EnvironmentFile=-/etc/ftp-robot.env
+
+# Запуск Java (stdout/stderr в journalctl)
+ExecStart=/usr/bin/java $JAVA_OPTS -jar /opt/ftp-robot/app.jar
+Restart=on-failure
+RestartSec=2
+SuccessExitStatus=143
+
+# Жёсткость и песочница (можно ослабить при необходимости)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+UMask=007
+
+# Разрешаем запись только туда, где нужно
+ReadWritePaths=/srv/ftp /var/log/ftp-robot
+
+# Если много файлов — увеличим лимит
+LimitNOFILE=65536
+
+# Логи в journald
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
